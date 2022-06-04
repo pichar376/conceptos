@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+
+        height:110vh;
+        background-color: rgb(49, 48, 48);
+        color: white;
+        margin: 0%;
+    }
+    main{
+        margin:5px;
+    }
+    header{
+        height:3.5rem;
+    }
+    .music{
+        color:yellow;
+    }
+    header p{
+        font-weight:100;
+    }
+    header p{
+     display: inline-block;
+     font-size:24px;
+     margin: .5rem;
+    }
+    .videos{
+        color: rgb(103, 107, 107);
+    }
+    .icono{
+        background-color:rgb(63, 62, 62);
+        border-radius:3px;
+        display:flex;
+        flex-flow:column wrap;
+        align-items: center;
+        justify-content:space-evenly;
+        border: 1px solid grey;
+        margin:.2rem;
+    
+        padding:0px;
+    }
+    .icono p{
+        margin:.2rem;
+        min-width:10rem;
+        max-width:25vw;
+    }
+    .slider-canciones{
+        width: 130vw;
+        display:flex;
+        flex-wrap: nowrap;
+        
+        
+        }
+        .scroll{
+            overflow-x:scroll;
+            margin-top:0;
+        }
+        .descargados{
+        border-radius:1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:1rem 0 1rem 0;
+        color: black;
+        background-color: whitesmoke;
+        height:1.5rem;
+        
+        width: 6rem;
+         border:1px solid grey;
+        }
+    
+
+        .buscador{
+            display: flex;
+            height:1.5rem;
+            width:100%;
+            align-items: center;
+
+        }
+        .buscador input{
+            width:80%;
+            background-color:rgb(63, 62, 62);
+        }
+        .buscador p{
+            margin:1rem;
+            }
+        .songs{
+            display:flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .artista{
+            display:flex;
+            flex-direction:column ;
+            margin:1rem;
+            flex-grow:1;
+            }
+            .artista p{
+             margin: 0;
+             word-spacing:.5rem;
+            }
+             .img{
+        height:2rem;
+        width: 2rem;border-radius:50%;
+
+        background-color: whitesmoke;
+        }
+        .slider-musica{
+       height:55vh;
+       overflow-y:scroll;
+        }
+        footer{
+            position: fixed;
+            background-color:black;
+            height:4rem;
+            width:100%;
+            display:flex;
+            justify-content:space-evenly;
+        }
+        footer div{
+            
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            height:inherit;
+            justify-content:center;
+        }
+        footer p{
+        margin:.0rem;
+        }
+
+</style>
+<body>
+    <main>
+    <header class="titulo">
+        <p class="music">Musica</p><p class="videos">videos</p>
+    </header>
+    <section class="scroll">
+    <div class="slider-canciones">
+        <section class="icono"><p>icono</p>
+        <p>canciones</p>
+        <p>441</p>
+        </section>
+        <section class="icono">
+            <p>icono</p>
+            <p>palylist</p>
+            <p>15</p>
+        </section>
+        <section class="icono">
+            <p>icono</p>
+            <p>artistas</p>
+            <p>257</p>
+        </section>
+        <section class="icono" >
+            <p>icono</p>
+            <p>356</p>
+        </section>
+    </div>
+    </section>
+        <section class="descargados">
+            <p>Descargados</p>
+        </section>
+        <section class="slider-musica">
+        <div class="buscador">
+        <input type="searching"placeholder="Buscar entre mis artistas">
+            <p>flechas</p>
+        </div>
+        
+
+        <section class="songs"><p class="img"></p><div class="artista"><p>24kGoldn feat.Iann Dior</p><p>1 album . 1 cancion</p></div></section>
+
+        <section class="songs"><p class="img"></p><div class="artista"><p>5 Seconds Of summer</p><p>3 album . 4 cancion</p></div></section>
+
+        <section class="songs"><p class="img"></p><div class="artista"><p>unkknown</unkknown></p><p>4 album . 19 cancion</p></div></section>
+
+        <section class="songs"><p class="img"></p><div class="artista"><p>A.B Quintanilla III y los Kumbia Kings</p><p>1 album . 1 cancion</p></div></section>
+
+        <section class="songs"><p class="img"></p><div class="artista"><p>Aaron Smith,Krono feat.Luvli</p><p>1 album . 1 cancion</p></div></section>
+
+        <section class="songs"><p class="img"></p><div class="artista"><p>Adele</p><p>1 album . 1 cancion</p></div></section>
+
+        <section class="songs"><p class="img"></p><div class="artista"><p>Akon</p><p>1 album . 1 cancion</p></div></section>
+
+        <section class="songs"><p class="img"></p><div class="artista"><p>Alejandro Sanz</p><p>1 album . 1 cancion</p></div></section>
+
+        <section class="songs"><p class="img"></p>   <div class="artista"><p>Alessia Cara</p><p>1 album . 1 cancion</p></div></section>
+    </main>
+        <footer>
+            <div class="inicio">
+                <p>casa</p>
+                <p>inicio</p>
+            </div>
+            <div class="buscar">
+                <p>lupa</p>
+                <p>buscar</p>
+            </div>
+            <div class="biblioteca">
+                <p>n-musical</p>
+                <p>Bibilioteca</p>
+            </div>
+            <div class="lista">
+                <p>flecha abajo</p>
+                <p>lista</p>
+            </div>
+            <div class="mas">
+                <p>tres rayas</p>
+                <p>Mas</p>
+            </div>
+        </footer>
+    </body>
+</html>

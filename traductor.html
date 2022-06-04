@@ -1,0 +1,181 @@
+<!DOCTPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF8">
+        <meta name="viewport"
+        content="width=device=width,initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        body{
+            background-color:rgba(155, 151, 151, 0.26);
+        }
+    *{
+        border-radius :5px;
+        
+    }
+       .container1{
+           background-color: blue;
+           color: white;
+           display: flex;
+           align-items: center;
+    }   
+    .menu{
+     margin-left: 3rem;
+
+    }
+    .container{
+        display: flex;
+        font-weight:250;
+        justify-content:space-evenly;
+     flex-basis: 40%;
+     text-align: center;
+     
+     
+    }
+    .flexIdioma{
+display: flex;
+justify-content: space-evenly;
+color: blue;
+    }
+    .containerrecorrido{
+        background-color: whitesmoke;
+        display: grid;
+        margin-top: 1rem;
+        grid-template-columns:30% 70%;
+        border: 1px solid grey;
+}
+    .img{
+        text-align: center;
+    }
+    .presiona{
+
+        display: flex;
+        flex-flow:column wrap;
+    
+        
+        
+    }
+    .presiona p{
+        margin-bottom:0px;
+    }
+    .reco{
+        margin-top: 0%;
+        color: blue;
+    }
+
+    .containerPluma{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas:
+        "textarea textarea pluma"
+        "camara camara camara" ;
+        border: 1px solid grey;
+        background-color:whitesmoke;
+        height: 30vh;
+
+    }
+    .conversacion{
+        grid-area: conversacion;
+    }
+    .textarea{
+        display: flex;
+        flex-flow:column wrap;
+        grid-area:textarea;
+        font-size: 24px;
+        height: 100%;
+        text-decoration: none;
+        }
+     .textarea::placeholder{
+         margin-top: 1rem;
+         justify-content:flex-end;
+         display:flex;
+         flex-flow:column wrap;
+         border-color: whitesmoke;
+     }
+    .busquedas{
+        display: grid;
+        grid-template-rows:repeat(auto,2rem);
+      }
+    .star{
+        background-color:whitesmoke;
+    }
+    .busquedas :first-child{
+        margin-top:1rem;
+    }
+    .star{
+    display:flex;
+        border:1px solid grey;
+        align-items:center;
+        justify-content: space-between
+        ;
+    }
+    .pluma{
+        display: flex;
+        margin: 1rem auto;
+
+    }
+    .pluma p{
+        margin: .5rem;
+
+    }
+    .flex-camara{
+        display: flex;
+        grid-area:camara;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+     .busquedas span{
+         margin-right:2rem;
+        
+        }
+        .busquedas p{
+         margin-left:2rem;
+        
+        }
+    </style>
+    <body>
+        <section class="container1">
+        <p class="menu">menu</p>
+        <h1 class="container">
+            Geogle traductor
+        </h1>
+</section>
+<section class="flexIdioma">
+    <p class="idioma">INGLES</p>
+    <p class="idioma">FLECHAS</p>
+    <p class="idioma">ESPANIOL</p>
+</section>
+<section class="containerPluma">
+<input type="text" class="textarea"placeholder="presiona para escribir">
+<section class="pluma">
+    
+<p class="griditem">pluma</p>
+<p class="gridItem">microfono</p>
+</section>
+<div class="flex-camara">
+<p class="camara">camara</p>
+<p class="conversacion">conversacion</p>
+<p class="transcribir">transcribir</p>
+</div>
+</section>
+<section class="containerrecorrido">
+    <p class="img">img</p>
+    <div class="presiona">
+    <p class="recorrido">presiona para  traducir <br>
+ Ahora Google Traductor <br> funciona en cualquier app </p><p class="reco">REALIZAR UN RECORRIDO</p>
+    </div>
+</section>
+<section class="busquedas">
+<div class="star"><p class="estrellas">contenido 1 </p> <span>estrella</span></div>
+<div class="star"><p class="estrellas">contenido 2 </p> <span>estrella</span></div>
+<div class="star"><p class="estrellas">contenido 3 </p><span>estrella</span></div>
+<div class="star"><p class="estrellas">contenido 4 </p><span>estrella</span></div>
+<div class="star"><p class="estrellas">contenido 5</p><span>estrella</span></div>
+</section>
+        <script>
+saludar()
+        </script>
+    </html>
+    

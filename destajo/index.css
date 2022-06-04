@@ -1,0 +1,66 @@
+* {
+  font-size: 10px;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif;
+}
+.grid-container {
+  display: flex;
+  width: 60vw;
+}
+.concepto {
+  border: thin solid gray;
+  flex-basis: 60%;
+}
+.item-concepto,
+.item-costo {
+  border-bottom: thin solid gray;
+}
+.item-unidad {
+  border-bottom: thin solid gray;
+  width: 100%;
+  text-align: center;
+  padding: 1px;
+}
+
+.item-costo {
+  width: 100%;
+  text-align: center;
+  padding: 1px;
+}
+.item-concepto {
+  padding: 1px;
+}
+.unidad {
+  flex-basis: 20%;
+  border: thin solid gray;
+}
+.costo {
+  border: thin solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 20%;
+}
+.title2 {
+  width: 60vw;
+  display: flex;
+}
+.item-title-concepto {
+  flex-basis: 60%;
+  text-align: center;
+  border: thin solid gray;
+}
+.item-title-unidad {
+  flex-basis: 20%;
+  text-align: center;
+  border: thin solid gray;
+}
+.item-title-costo {
+  text-align: center;
+  flex-basis: 20%;
+  border: thin solid gray;
+}
+.grid-container p:nth-child(even) {
+  background-color: #00000010;
+}

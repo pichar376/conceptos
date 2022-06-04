@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    background-color: rgb(8, 20, 20);
+    margin: 0;
+  }
+
+  .panel {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 40vw;
+    background-color: rgb(186, 204, 236);
+    position: relative;
+    border-radius: 1rem;
+  }
+
+  .panel input {
+    height: 30%;
+    width: 100%;
+    background-color: rgb(186, 204, 236);
+    font-size: 26px;
+
+
+  }
+
+  .menu-panel {
+    position: absolute;
+    top: .1rem;
+    right: 1rem;
+
+
+  }
+
+  .linea-panel {
+    margin: 0%;
+    position: absolute;
+    bottom: .2rem;
+
+  }
+
+  .tablero {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    align-items: center;
+    width: inherit;
+
+  }
+
+  .tablero article {
+    padding: 0px;
+    text-align: center;
+    line-height: 7vh;
+    height: 7vh;
+    width: 7vw;
+    border: 1px solid grey;
+    border-radius: 50%;
+    margin: .2rem;
+
+  }
+
+  main {
+
+    margin: 0 auto;
+    width: 40vw;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    height: 78vh;
+    border-radius: 1rem;
+    background-color: seashell;
+    border: 1px solid grey
+  }
+</style>
+
+<body>
+  <main>
+    <section class="panel">
+      <p class="menu-panel">:</p>
+      <p class="linea-panel">__</p>
+      <input type="text">
+    </section>
+    <section class="tablero">
+      <article>AC</article>
+      <article>()</article>
+      <article>%</article>
+      <article>/</article>
+      <article>7</article>
+      <article>8</article>
+      <article>9</article>
+      <article>*</article>
+      <article>4</article>
+      <article>5</article>
+      <article>6</article>
+      <article>-</article>
+      <article>1</article>
+      <article>2</article>
+      <article>3</article>
+      <article>+</article>
+      <article>0</article>
+      <article>.</article>
+      <article>~</article>
+      <article>=</article>
+    </section>
+  </main>
+</body>
+
+</html>
